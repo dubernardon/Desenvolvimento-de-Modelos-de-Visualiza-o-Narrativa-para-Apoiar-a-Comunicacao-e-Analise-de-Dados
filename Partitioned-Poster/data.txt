@@ -1,0 +1,14 @@
+paises,populacao,densidadepopulacional,taxamortalidade,taxanatalidade,taxaalfabetizacao,taxacrescimento,taxademigracao
+Argentina,45,16,7,16,99,1,0
+Bolivia,11,11,6,21,93,1,0
+Brasil,211,25,7,14,93,1,0
+Chile,18,24,6,13,96,1,0
+Colombia,49,43,6,15,95,1,0
+Equador,16,60,5,17,93,1,0
+Guiana,0.750,3,7,15,89,1,0
+IlhasFalkland,0.003,0,5,11,null,0,0
+Paraguai,7,18,5,17,94,1,0
+Peru,31,25,6,17,94,1,-2
+Suriname,0.609,4,6,15,94,1,1
+Uruguai,3,19,9,13,99,0,-1
+Venezuela,28,31,8,18,97,1,-3
