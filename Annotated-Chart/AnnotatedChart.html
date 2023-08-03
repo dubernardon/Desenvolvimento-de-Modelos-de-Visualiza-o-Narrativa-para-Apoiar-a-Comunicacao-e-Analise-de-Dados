@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Annotated Chart South America Population</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Bootstrap-5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="Bootstrap-5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="D3.js/dist/d3_V4.js"></script>
+  <script src="D3.js/dist/d3-annotation.min.js"></script>
+  <script src="Chart.js/chart.js"></script>
+  <script defer type="module" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body>
+  <div id="div"></div>
+  <div id="appendUserAnnotations"></div>
+  <div id="functionsAnnotations">
+  </div>
+  <div id="instructions">
+    <h1>
+      Annotated Graph: South America Population
+    </h1>
+    <p id="titleParagraph">
+      The main objective of this visualization is to point out the best evidence on the population issue in South
+      America through the annotation tool and the annotated graph, which has aspects of literacy, growth, migration,
+      mortality and birth rates, population and population density of each country to study.
+    </p>
+    <p id="titleParagraph">Annotated chart used to study narrative visualizations at the PUCRS Davint laboratory in the
+      project "Development of Narrative Visualization Models to Support the Communication and Analysis of Open
+      Government Data"
+      .</p>
+    <h3 id="titleParagraph">
+      <div>
+        <a href="http://lattes.cnpq.br/0482651569409294"> Claiton Marques Correa doctoral project.</a>
+      </div>
+      <div id="data">
+        Data: <a href="https://www.indexmundi.com/map/">https://www.indexmundi.com/map/</a>
+      </div>
+    </h3>
+  </div>
+  <div id="project">
+    <div id="vertical_menu">
+      <div id="vertical_menu_content">
+        <div id="buttonsToAnnotationSection" class="verticalMenuSections">
+          <p>Dynamic annotations:</p>
+          <div id="annotationButtons">
+            <button class="pageButtons" id="createAnottationButton"></button>
+            <button class="pageButtons" id="saveAnottationButton"></button>
+          </div>
+        </div>
+        <div id="dropdown_datachooseSection" class="verticalMenuSections">
+          <p id="textDropdown_datachooseSection">Sections:</p>
+          <div id="dropdown_datachoose">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Select:
+              </button>
+              <ul class="dropdown-menu" id="dropdown">
+                <li id="btnChoose0"><a class="dropdown-item" href="#">Population</a></li>
+                <li id="btnChoose1"><a class="dropdown-item" href="#">Population density</a></li>
+                <li id="btnChoose2"><a class="dropdown-item" href="#">Mortality rate</a></li>
+                <li id="btnChoose3"><a class="dropdown-item" href="#">Birth rate</a></li>
+                <li id="btnChoose4"><a class="dropdown-item" href="#">Literacy rate</a></li>
+                <li id="btnChoose5"><a class="dropdown-item" href="#">Growth rate</a></li>
+                <li id="btnChoose6"><a class="dropdown-item" href="#">Migration rate</a></li>
+              </ul>
+              <button id="btnReloadPage">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <div id="buttosToDeleteSection" class="verticalMenuSections">
+          <p>Delete annotations:</p>
+          <div id="buttosToDelete">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select:
+            </button>
+            <ul class="dropdown-menu" id="dropdown-delete">
+            </ul>
+            <button class="pageButtons" id="deleteAnnotationButton"></button>
+          </div>
+        </div>
+        <div id="annotationColorSection">
+          <p>Annotation color:</p>
+          <div id="annotationColor">
+            <div id="colorLine1">
+              <canvas id="colorBlue" width="70px" height="70px"></canvas>
+              <canvas id="colorRed" width="70px" height="70px"></canvas>
+              <canvas id="colorGreen" width="70px" height="70px"></canvas>
+            </div>
+            <div id="colorLine2"></div>
+            <canvas id="colorYellow" width="70px" height="70px"></canvas>
+            <canvas id="colorPink" width="70px" height="70px"></canvas>
+            <canvas id="colorOrange" width="70px" height="70px"></canvas>
+          </div>
+        </div>
+        <div id="developerDiv">
+          <p class="developerText">Developed by Eduardo Cozer Bernardon. </p>
+          <div id="developerInfo">
+            <div id="firstLine">
+              <a class="social-info-logo" href="https://github.com/dubernardon"> <img class="imgInfoLink"
+                  src="./social-info/github.png" alt=""></a>
+              <a class="social-info-logo" href="http://lattes.cnpq.br/5600122654795176"> <img class="imgInfoLink"
+                  src="./social-info/Lattes.png" alt="" id="lattesLogo"></a>
+            </div>
+            <div id="secondLine">
+              <a class="social-info-logo" href="https://www.linkedin.com/in/eduardo-bernardon-905423235/"> <img
+                  class="imgInfoLink" src="./social-info/LinkedIn.png" alt=""></a>
+              <a class="social-info-logo" href="https://www.instagram.com/dubernardon/"> <img class="imgInfoLink"
+                  src="./social-info/Instagram.png" alt="" id="instagramLogo"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="AnnotatedChart">
+      <div id="AnnotatedChart_without_annotation">
+        <div id="chart_ambient">
+          <div id="chart_positions">
+            <div id="chart">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg width="600" height="600" id="annotation1"></svg>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

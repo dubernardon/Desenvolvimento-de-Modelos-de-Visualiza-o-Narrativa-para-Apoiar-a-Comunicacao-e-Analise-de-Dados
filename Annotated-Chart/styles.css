@@ -1,0 +1,380 @@
+:root {
+  --primary-color: #052429;
+  --secondary-color: #8dc3e8;
+  --explanationBackgroudColor: #1e4e55d7;
+}
+
+body {
+  background-color: #ececec;
+}
+
+#AnnotatedChart {
+  width: 1000px;
+  height: 900px;
+  scale: 1.2;
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
+#chart {
+  width: 1000px;
+  height: 300px;
+  position: absolute;
+  position: static;
+  margin-left: 47px;
+  margin-top: 180px;
+}
+
+#chart_ambient {
+  margin-top: 45px;
+  width: 2000px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.positionsless10 {
+  z-index: 2;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.positionsgreather10 {
+  z-index: 2;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+#numberdiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 85px;
+}
+
+#highvalues {
+  width: 500px;
+  height: 70px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+#div {
+  border: 1px dotted #000;
+  position: absolute;
+}
+
+.verticalbarhigh {
+  width: 5px;
+  height: 70px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.horizontalbar {
+  background-color: black;
+  width: 15px;
+  height: 5px;
+
+}
+
+.verticalbar5medium {
+  height: 150px;
+  background-color: black;
+  width: 5px;
+  margin-left: 10px;
+}
+
+.annotationselection {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 70px;
+  position: absolute;
+}
+
+#annotation1 {
+  z-index: 3;
+  margin-left: 65px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+#annotation2 {
+  z-index: 3;
+  margin-left: 65px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+#AnnotatedChart_without_annotation {
+  position: absolute;
+}
+
+#chart_positions {
+  display: flex;
+  flex-direction: column;
+}
+
+.dottedline {
+  width: 1px;
+  height: 220px;
+  border-style: dotted;
+  border-color: black;
+  position: absolute;
+}
+
+#dottedline1 {
+  margin-left: 100px;
+}
+
+.dottedline2 {
+  margin-left: 200px;
+}
+
+.annotationbox {
+  margin-top: 145px;
+  width: 100px;
+  height: 800px;
+  position: absolute;
+  z-index: 2;
+}
+
+#annotationbox2 {
+  margin-left: 360px;
+}
+
+.dropdown {
+  z-index: 10;
+}
+
+#topannotation {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+#div {
+  border: 1px dotted #000;
+  position: absolute;
+}
+
+#deleteAnnotation {
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  z-index: 3;
+}
+
+#pai {
+  z-index: 5;
+}
+
+#teste {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  z-index: 10;
+}
+
+#testButton {
+  width: 100px;
+  height: 50px;
+}
+
+.pageButtons {
+  width: 70px;
+  height: 50px;
+  font-size: 10px;
+}
+
+#vertical_menu {
+  width: 300px;
+  height: 850px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#dropdown_datachooseSection {
+  margin-top: 20px;
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+#project {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.verticalMenuSections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonsToAnnotationSection {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#annotationButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+#instructions {
+  width: 1200px;
+  height: 220px;
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+button {
+  border-radius: 10px;
+  border: 0px;
+  margin: 5px;
+  background-color: var(--secondary-color);
+}
+
+#createAnottationButton {
+  background-image: url('./Img/mouse_annotation.png');
+}
+
+#saveAnottationButton {
+  background-image: url('./Img/disk.png');
+}
+
+#textDropdown_datachooseSection {
+  margin-left: 5px;
+}
+
+#buttosToDeleteSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#deleteAnnotationButton {
+  background-image: url('./Img/mouse_annotation_toDelete.png');
+}
+
+#vertical_menu_content {
+  margin: 5px;
+}
+
+#functionsAnnotations {
+  position: absolute;
+  z-index: 10;
+}
+
+#instructions {
+  text-align: left;
+  color: var(--secondary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-decoration: underline;
+  font-size: 35px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#annotationColorSection {
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.selectedColor {
+  opacity: 0.5;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#titleParagraph {
+  font-size: 13px;
+  text-align: left;
+  margin-left: 30px;
+  position: relative;
+}
+
+#developerDiv {
+  margin-top: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.developerText {
+  font-size: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+#ProjectText {
+  font-size: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+#developerInfo {
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.social-info-logo {
+  margin: 15px;
+}
+
+#firstLine {
+  display: flex;
+  flex-direction: row;
+}
+
+#secondLine {
+  display: flex;
+  flex-direction: row;
+}
+
+#lattesLogo {
+  margin-left: 35px;
+}
+
+#instagramLogo {
+  margin-left: 35px;
+}
+
+#claitonLink {
+  font-size: 20px;
+}
+
+#data {
+  margin-top: 15px;
+}
